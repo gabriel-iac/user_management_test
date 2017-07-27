@@ -1,0 +1,21 @@
+{
+  "name": "user_management_app",
+  "version": "0.0.1",
+  "description": "Node app to handle user management",
+  "main": "app/index.js",
+  "scripts": {
+    "build": "babel app -s -D -d dist --presets es2015,stage-0",
+    "start": "node dist",
+    "prestart": "npm run -s build"
+  },
+  "author": "tsl-dev-team",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "compression": "^1.7.0",
+    "cors": "^2.8.4",
+    "express": "^4.15.3",
+    "morgan": "^1.8.2",
+    "pg": "^7.0.2"
+  }
+}
